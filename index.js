@@ -39,7 +39,6 @@ const rentalDeals = [
 
 
 let rental = document.querySelector('.car-card')
-console.log(rental)
 rentalDeals.map((item) => (
     rental.innerHTML += `
         <div class="flex flex-col gap-6 shadow-xl bg-[#ffffff] p-6 rounded-lg" >

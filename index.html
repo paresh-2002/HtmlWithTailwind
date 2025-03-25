@@ -12,10 +12,11 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./index.css">
     <!-- @theme {  --font-display: "poppins", "sans-serif"; } -->
 </head>
 
-<body class="font-['poppins', 'sans-serif']">
+<body class="font-['poppins']">
     <div class="max-w-[1440px] m-auto max-2xl:overflow-hidden container">
         <header>
             <div class="relative">
@@ -24,17 +25,17 @@
                         <a href="#" class="img-logo">
                             <img src="./images/header_logo.png" alt="header logo">
                         </a>
-                        <div class="none">
+                        <div class="none max-md:block">
                             <button class="navbar-toggler-btn">
                                 <i class="fas fa-bars"></i>
                             </button>
                         </div>
                         <div class="flex justify-between items-center gap-15" id="navMenu">
                             <ul class="flex justify-between items-ceter gap-10 text-[#484848]">
-                                <li><a href="">Become a renter</a></li>
-                                <li><a href="">Rental deals</a></li>
-                                <li><a href="">How it work</a></li>
-                                <li><a href="">Why choose us</a></li>
+                                <li><a href="" class="hover:underline ease-in-out ">Become a renter</a></li>
+                                <li><a href="" class="hover:underline ease-in-out">Rental deals</a></li>
+                                <li><a href="" class="hover:underline ease-in-out">How it work</a></li>
+                                <li><a href="" class="hover:underline ease-in-out">Why choose us</a></li>
                             </ul>
 
                             <div class="flex justify-center items-center gap-10 ">
@@ -139,10 +140,8 @@
                         </div>
                     </div>
 
-                    <div
-                        class="pt-40 w-full pb-20 inline-flex animate-loop-scroll flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-                        <ul
-                            class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-scroll">
+                    <div class="pt-40 w-full pb-20 inline-flex animate-loop-scroll flex-nowrap overflow-hidden">
+                        <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-scroll">
                             <li class="slide">
                                 <img src="./images/honda.png" alt="">
                             </li>
@@ -161,10 +160,9 @@
                             <li class="slide">
                                 <img src="./images/acura.png" alt="">
                             </li>
-
                         </ul>
-                        <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
-                            aria-hidden="true">
+                        
+                        <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-scroll" >
                             <li class="slide">
                                 <img src="./images/honda.png" alt="">
                             </li>
@@ -183,10 +181,8 @@
                             <li class="slide">
                                 <img src="./images/acura.png" alt="">
                             </li>
-
                         </ul>
                     </div>
-
                 </div>
 
             </section>
@@ -429,11 +425,11 @@
                             <div class="footer-content-list">
                                 <h6 class="text-[#ffffff] pb-8">Our Product</h6>
                                 <ul>
-                                    <li class="text-sm pb-4"><a href="">Career</a></li>
-                                    <li class="text-sm pb-4"><a href="">Car</a></li>
-                                    <li class="text-sm pb-4"><a href="">Packages</a></li>
-                                    <li class="text-sm pb-4"><a href="">Features</a></li>
-                                    <li class="text-sm "><a href="">Priceline</a></li>
+                                    <li class="text-sm pb-4 hover:underline "><a href="">Career</a></li>
+                                    <li class="text-sm pb-4 hover:underline"><a href="">Car</a></li>
+                                    <li class="text-sm pb-4 hover:underline"><a href="">Packages</a></li>
+                                    <li class="text-sm pb-4 hover:underline"><a href="">Features</a></li>
+                                    <li class="text-sm hover:underline"><a href="">Priceline</a></li>
                                 </ul>
                             </div>
 
@@ -442,12 +438,12 @@
                             <div class="footer-content-list">
                                 <h6 class="text-[#ffffff] pb-8">Resources</h6>
                                 <ul>
-                                    <li class="text-sm pb-4"><a href="">Download</a></li>
-                                    <li class="text-sm pb-4"><a href="">Help Centre</a></li>
-                                    <li class="text-sm pb-4"><a href="">Guides</a></li>
-                                    <li class="text-sm pb-4"><a href="">Partner Network</a></li>
-                                    <li class="text-sm pb-4"><a href="">Cruises</a></li>
-                                    <li class="text-sm"><a href="">Developer</a></li>
+                                    <li class="text-sm pb-4 hover:underline"><a href="">Download</a></li>
+                                    <li class="text-sm pb-4 hover:underline"><a href="">Help Centre</a></li>
+                                    <li class="text-sm pb-4 hover:underline"><a href="">Guides</a></li>
+                                    <li class="text-sm pb-4 hover:underline"><a href="">Partner Network</a></li>
+                                    <li class="text-sm pb-4 hover:underline"><a href="">Cruises</a></li>
+                                    <li class="text-sm hover:underline"><a href="">Developer</a></li>
                                 </ul>
                             </div>
 
@@ -456,11 +452,11 @@
                             <div class="footer-content-list">
                                 <h6 class="text-[#ffffff] pb-8">About Rentcars</h6>
                                 <ul>
-                                    <li class="text-sm pb-4"><a href="">Why choose us</a></li>
-                                    <li class="text-sm pb-4"><a href="">Our Story</a></li>
-                                    <li class="text-sm pb-4"><a href="">Investor Relations</a></li>
-                                    <li class="text-sm pb-4"><a href="">Press Center</a></li>
-                                    <li class="text-sm"><a href="">Advertise</a></li>
+                                    <li class="text-sm pb-4 hover:underline"><a href="">Why choose us</a></li>
+                                    <li class="text-sm pb-4 hover:underline"><a href="">Our Story</a></li>
+                                    <li class="text-sm pb-4 hover:underline"><a href="">Investor Relations</a></li>
+                                    <li class="text-sm pb-4 hover:underline"><a href="">Press Center</a></li>
+                                    <li class="text-sm hover:underline"><a href="">Advertise</a></li>
                                 </ul>
                             </div>
 
@@ -482,6 +478,8 @@
             </div>
         </footer>
     </div>
+
+
     <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
