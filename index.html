@@ -19,7 +19,7 @@
     <!-- @theme {  --font-display: "poppins", "sans-serif"; } -->
 </head>
 
-<body class="font-poppins max-2xl:overflow-x-hidden">
+<body class="font-poppins overflow-x-hidden">
     <div class="max-w-[1440px] m-auto max-2xl:overflow-hidden container ">
         <header>
             <div class="relative">
@@ -193,7 +193,7 @@
                         </ul>
 
                         <ul
-                            class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-scroll">
+                            class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-scroll" aria-controls="true">
                             <li class="slide">
                                 <img src="./images/honda.png" alt="">
                             </li>
@@ -316,9 +316,9 @@
                             class="bg-[#1572D31A] text-[#1572D3] rounded-lg px-6 py-4 text-lg font-medium transition-all hover:bg-[#1572D3] hover:text-white">TESTIMONIALS</a>
                         <h2 class="font-medium text-4xl pt-8">What people say about us?</h2>
                     </div>
-                    <div class="swiper mySwiper ">
+                    <div class="swiper mySwiper px-40">
                         <div class="swiper-wrapper ">
-                            <div class="swiper-slide ml-5 overflow-hidden shadow-lg bg-white rounded-xl mx-auto">
+                            <div class="swiper-slide  overflow-hidden shadow-lg bg-white rounded-xl  ">
                                 <div class="flex items-center space-x-6 w-full max-sm:flex-col">
                                     <div class="relative w-1/2 max-sm:w-full h-[500px]">
                                         <img src='./images/Charlie-Johnson.jpeg' alt="Charlie Johnson"
@@ -527,6 +527,7 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             scrollbar: {
+                slidePreview:'auto',
                 spaceBetween: 30,
                 hide: true,
             },
