@@ -41,10 +41,10 @@ const rentalDeals = [
 let rental = document.querySelector('.car-card')
 rentalDeals.map((item) => (
     rental.innerHTML += `
-        <div class="flex flex-col gap-6 shadow-xl bg-[#ffffff] p-6 rounded-lg" >
+        <div class="flex flex-col gap-6 shadow-xl bg-[#ffffff] p-6 rounded-lg max-lg:w-2/5 max-sm:w-full" >
             <img src=${item.img} alt=${item.title} >
             <div class="flex flex-col gap-6 justify-center items-start">
-                <div class="">
+                <div class="max-lg:w-full">
                     <h6 class="text-[#262626] pb-3 font-medium">${item.title}</h6>
                     <p class="w-full text-xs flex gap-1"><img src="./images/Star 1.png" alt=""> <span class="font-bold">${item.review}</span>
                             (2.436 reviews)</p>
@@ -72,7 +72,7 @@ rentalDeals.map((item) => (
                         </div>
                     </div>
                 </div>
-                <div class="border-t-1 border-[#E0E0E0] pt-6">
+                <div class="border-t-1 border-[#E0E0E0] pt-6 max-lg:w-full">
                     <div class="flex justify-between items-center gap-20 pb-6">
                         <p class="text-[#595959] text-sm">Price</p>
                         <p><span class="text-[#292929] font-bold">${item.price}</span>/day</p>
